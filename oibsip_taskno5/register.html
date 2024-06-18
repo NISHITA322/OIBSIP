@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: rgb(235, 231, 240);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container{
+            background-color: #ffffff;
+            border-radius: 5px;
+            width:60%;
+            height: 60%;
+            display: flex;
+        }
+       
+        .info{width: 480px; padding: 30px; margin-left: 250px;}
+        .info h2{
+            color: #394a67;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .info form{ flex-direction: column; display: flex;}
+        .info form .fields{margin-bottom: 15px;}
+        .info form .fields label{
+            color: #4a5568;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .info form .fields input{
+            width:100%;
+            border: 1px solid rgb(219, 179, 179);
+            padding: 6px;
+            border-radius: 6px;
+            outline: none;
+        }
+        .info form .fields input:focus{ box-shadow: 0 0 0 2px rgba(84, 141, 239, 0.3);}
+        .info form button{
+            width:100%;
+            columns: white;
+            background-color: #4a5568;
+            border-radius: 5px;
+            padding: 6px;
+            border: none;
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="info">
+            <h2>Create Your ChatSpace</h2>
+            <form action="/" method="post">
+                <div class="fields">
+                    <label for="username">Username</label>
+                    <input type="text" name="uname1" id="username" required>
+                </div>
+                <div class="fields">
+                    <label for="password">Password</label>
+                    <input type="password" name="pwd1" id="password" required>
+                </div>
+                <button type="submit">Register</button>
+
+                <p>Already Have an Account ?</p>
+                <a href="/login">Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
